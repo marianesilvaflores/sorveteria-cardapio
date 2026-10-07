@@ -51,3 +51,32 @@ button { border:0; border-radius:8px; background:var(--chocolate); color:white; 
 .result { margin-top:16px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .result>span { font-size:12px; color:var(--muted); }
 output { font-family:'Fraunces',serif; font-size:28px; color:var(--pink); }
+@media (max-width:900px) {
+  .menu-grid { gap:16px; }
+  .product-content { padding:18px; }
+  h3 { font-size:25px; }
+  .price-row { align-items:flex-start; flex-direction:column; }
+  .product-content>p { min-height:96px; }
+  .calculator { gap:26px; padding:30px; }
+}
+@media (max-width:650px) {
+  .header,main,footer { width:calc(100% - 36px); }
+  .header { flex-wrap:wrap; justify-content:center; padding:24px 0 18px; gap:20px; }
+  nav { width:100%; justify-content:center; gap:22px; font-size:12px; }
+  nav a:last-child { padding:10px 15px; }
+  .intro { padding:35px 0; }
+  h1 { font-size:42px; letter-spacing:-1.7px; }
+  .eyebrow { font-size:9px; letter-spacing:1.5px; }
+  .intro>p:last-child { font-size:14px; }
+  .section-title h2 { font-size:24px; }
+  .section-title>span { font-size:10px; }
+  .menu-grid { grid-template-columns:1fr; gap:22px; max-width:420px; margin:auto; }
+  .product-content { padding:24px; }
+  h3 { font-size:30px; }
+  .product-content>p { min-height:0; }
+  .price-row { flex-direction:row; align-items:center; }
+  .calculator { grid-template-columns:1fr; padding:27px 22px; gap:24px; margin:30px 0; }
+  .calculator h2 { font-size:29px; }
+  footer { flex-direction:column; text-align:center; gap:12px; }
+  footer p { margin:0; }
+}
