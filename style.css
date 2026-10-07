@@ -4,8 +4,8 @@
 html { scroll-behavior:smooth; scroll-padding-top:24px; }
 a:focus-visible,button:focus-visible,input:focus-visible { outline:3px solid var(--pink); outline-offset:4px; }
 input[aria-invalid="true"] { border-color:#9e173b; }
-.skip-link { position:fixed; top:8px; left:8px; z-index:5; transform:translateY(-150%); background:var(--chocolate); color:white; padding:12px; border-radius:8px; }
-.skip-link:focus { transform:translateY(0); }
+.skip-link { position:fixed; top:8px; left:8px; z-index:5; transform:translateY(-150%); opacity:0; background:var(--chocolate); color:white; padding:12px; border-radius:8px; }
+.skip-link:focus { transform:translateY(0); opacity:1; }
 .product { transition:transform .25s ease,box-shadow .25s ease; }
 @media(hover:hover) { .product:hover { transform:translateY(-5px); box-shadow:0 14px 30px #492b2910; } button:hover { background:#70423e; } nav a:hover { color:var(--pink); } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .product { transition:none; } }
