@@ -36,6 +36,17 @@
         </article>
       </div>
     </section>
+    <section class="calculator" id="por-peso" aria-labelledby="titulo-calculadora">
+      <div class="calculator-intro"><p class="eyebrow">SÓ O QUE VOCÊ QUISER</p><h2 id="titulo-calculadora">Seu potinho, sua medida.</h2><p>R$ 60,00 por quilo. Informe o peso do sorvete<br>e descubra quanto fica.</p></div>
+      <form id="weight-form" novalidate>
+        <label for="weight">Peso do sorvete</label>
+        <div class="input-row"><div class="input-wrap"><input id="weight" name="weight" type="number" min="1" max="5000" step="1" inputmode="numeric" value="200" required aria-describedby="weight-hint weight-error"><span aria-hidden="true">g</span></div><button type="submit">Calcular</button></div>
+        <p id="weight-hint" class="hint">De 1 a 5.000 g, sem o peso da embalagem.</p>
+        <p id="weight-error" class="error" role="alert"></p>
+        <div class="result"><span>Seu total estimado</span><output id="total" for="weight" aria-live="polite">R$ 12,00</output></div>
+      </form>
+      <noscript><p>Ative o JavaScript para calcular. Cada 100 g custa R$ 6,00.</p></noscript>
+    </section>
   </main>
   <footer><a class="footer-brand" href="#inicio">doce gelado</a><p>Feito por Mariane Silva Flores · Atividade 1</p><span>Cardápio ilustrativo</span></footer>
 </body>
