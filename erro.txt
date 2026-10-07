@@ -1,0 +1,4 @@
+Pendência identificada na calculadora:
+O formulário usa novalidate e o JavaScript ainda não rejeita peso vazio,
+negativo, fracionado ou acima de 5.000 g. Validar antes de mostrar o total.
+Remover este registro temporário após corrigir e verificar os casos.
